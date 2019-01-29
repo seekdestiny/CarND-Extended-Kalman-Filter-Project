@@ -75,7 +75,7 @@ void KalmanFilter::UpdateEKF(const VectorXd &z) {
     y(1) -= twoPI;
   }
   
-  while (y(1) < M_PI) {
+  while (y(1) < -M_PI) {
     y(1) += twoPI;
   }
   
